@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* JS CHANGES */
+
+.red {
+  background: rgb(255, 60, 60);
+  transition: 0.5s;
+  border-radius: 100px;
+}
+
+.blue {
+  background: rgb(13, 106, 255);
+  transition: 0.5s;
+}
+
+.redPlayer {
+  background: rgb(255, 60, 60);
+  transition: 0.5s;
+}
+
+body {
+  color: rgb(53, 255, 188);
+  background-image: url(fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+}
+
+.container{
+  width:   width: 90%;;
+}
+
+.title {
+  margin: 50px auto;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.titlee {
+  display: none;
+}
+
+.game {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  max-width: 90%;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.game div {
+  border: cornsilk 1px solid;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.players div {
+  border: rgb(255, 189, 178) 1px solid;
+  margin: 0px 50px;
+  padding: 20px;
+  width: 20%;
+  color: white;
+  text-align: center;
+}
+
+.playersScore {
+  display: flex;
+  justify-content: center;
+}
+
+.playersScore div {
+  margin: 0px 50px;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+}
+
+.victory {
+  background: rgb(14, 13, 13, 0.7);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.victory div {
+  border: 1px solid white;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  background: aquamarine;
+  color: black;
+}
+.victory div a {
+  margin: 50px;
+}
+.accept {
+  border: black 1px solid;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: rgb(236, 235, 235);
+}
+.acceptInfo {
+  font-weight: bold;
+
+  padding: 10px;
+  overflow: hidden;
+}
+.accept:hover {
+  background: blanchedalmond;
+  transition: 0.4s;
+}
+.show {
+  display: block;
+}
+.resetBtn {
+  margin: auto;
+  border: 1px solid wheat;
+  text-align: center;
+  width: 150px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.resetBtn:hover {
+  background: rgb(36, 36, 36);
+  transition: 0.5s;
+}
+
+.footer {
+  position: fixed;
+  border-top: 1px solid springgreen;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background: black;
+  letter-spacing: 2px;
+}
+.footer p span{
+  color: whitesmoke;
+}
